@@ -55,43 +55,56 @@ inquirer
     .then((response) => {
         console.log(response)
 
-        const  {title, describe, installation, usage, guidelines, test, license, gitHub, email} = response;
+        const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
 
-myReadMe();
-        function myReadMe(title, describe, installation, usage, guidelines, test, license, gitHub, email) {
+        myReadMe(title, describe, installation, usage, guidelines, test, license, gitHub, email);
+        function myReadMe() {
 
-            var userReadMe = `<!doctype html>
-            <html lang="en">
-              <head>
-                <!-- Required meta tags -->
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+            var userReadMe = `# ${title}
+
+            ## Decription
+            ### ${describe}
+
+            ## Table Of Contents
             
-                <!-- Bootstrap CSS -->
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            1: [Webpage Screenshot](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#webpage-screenshots)
+            2: [How to use:](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#how-to-use)
+            3: [My Contact Information](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#my-contact-information)
             
-                <title>Profile Information</title>
-              </head>
-              <body>
-                <h1>Hello, world!</h1>
+            [https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
+
+            ## Installation
+            ###${installation}
             
-                <div class="container">
-                  <div class="row row-cols-1">
-                    <div class="col">Name:${title} </div>
-                    <div class="col">Location:${describe} </div>
-                    <div class="col">Bio: ${installation}</div>
-                    <div class="col">Linkedin URL:${usage}</div>
-                    <div class="col">GitHub URL:${gitHub}</div>
-                  </div>
-                </div>
+            ## Usage
+            ### ${usage}
+
+
+            ## Guidelines
+            ### ${guidelines}
+
+            ## Test
+            ### ${test}
+
+
             
-                
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             
-                
-              </body>
-            </html>`
+            ## How to use:
         
+    
+            ## My Contact Information:
+            
+            * [My LinkedIn](https://www.linkedin.com/in/emil-ronquillo-76832a32/)
+            * [My Github](https://github.com/${gitHub})
+            * [My Email](mailto:${email})
+            
+            ## Thank you for stopping by. 
+            
+            Special thanks to all my Instructor, tutors and my colleagues`
+
+
+
+
             fs.writeFile('myReadMe.md', userReadMe, (err) =>
                 err ? console.error(err) : console.log('Success!')
             );
