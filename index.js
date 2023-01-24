@@ -1,8 +1,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
-const { title } = require('process')
 
-
+// Prompt function for question and answer
 inquirer
     .prompt([
         {
@@ -39,7 +38,7 @@ inquirer
             type: 'list',
             message: 'Please choose a license',
             name: 'license',
-            choices: ['MIT', 'Mozilla', 'IBM'],
+            choices: ['MIT', 'Mozilla', 'IBM', 'none'],
         },
         {
             type: 'input',
@@ -52,24 +51,22 @@ inquirer
             name: 'email'
         },
     ])
-
+    //generating data based on the answers/response
     .then((response) => {
         console.log(response)
 
-        const licenses = require('./utils/generateMarkdown')
-       // if (response.license.includes('HTML')){}
+        const licenses = require('./utils/generateMarkdown') // grabbing datas from another js file.
 
-        console.log(licenses.generateMarkdown(response.license));
-         
-        console.log(urlLink)
-        // console.log(HTML)
-        
-        const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
+        licenses.generateMarkdown(response.license);
+
+       // console.log(urlLink)
+
+        const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;  //assigning constant 
 
         myReadMe(response);
         function myReadMe() {
 
-            var userReadMe = `# ${title}
+            var userReadMe = `# ${title}    ${urlLinkBadge}
 
 ## Decription
 ### ${describe}
@@ -79,8 +76,8 @@ inquirer
 ## Table Of Contents            
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Guidelines](#guidelines)
-4. [Test](#test)
+3. [Guidelines](#contributing)
+4. [Test](#tests)
 5. [How to Use](#how-to-use)
 6. [Contact Information](#my-contact-information)
 
@@ -91,10 +88,10 @@ inquirer
 ### ${usage}
 
 
-## Guidelines
+## Contributing
 ### ${guidelines}
 
-## Test
+## Tests
 ### ${test}
 
 
@@ -107,17 +104,16 @@ inquirer
             
 * [My Github](https://github.com/${gitHub})
 * [My Email](mailto:${email})
+
+
+${urlLink}
+
             
-## License.
-
-## ${urlLink}
-
-            
-Special thanks to all my Instructor, tutors and my colleagues`
+### Special thanks to all my Instructor, tutors and my colleagues`
 
 
 
-
+            // Function to write the readme file.
             fs.writeFile('myReadMe.md', userReadMe, (err) =>
                 err ? console.error(err) : console.log('Success!')
             );
