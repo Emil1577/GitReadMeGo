@@ -144,6 +144,8 @@ const inquirer = require('inquirer')
 
 After completing the installation instruction, on the same terminal just type in "node index.js" then enter. The terminal will then ask you multiple questions.  After completing each questions, it will then create a new file called "userReadMe.md".  This file is generated based on the answers provided.
 
+Here's a short video on how to use. https://drive.google.com/file/d/14vYBx3EbTVbQUL8TV-Yj-ptR9qHmb5Jk/view
+
 ## Test Instruction:
 
 To test the application, please go to the folder of the cloned repository.  Check for a file named "userReadMe.md", if it's there check and see if the file is correctly created with the answers you provided. If you are successfull, this means you are able to use the app correctly.
