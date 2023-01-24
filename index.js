@@ -111,7 +111,7 @@ ${urlLink}
 
 
             // Function to write the readme file.
-            fs.writeFile('myReadMe.md', userReadMe, (err) =>
+            fs.writeFile('userReadMe.md', userReadMe, (err) =>
                 err ? console.error(err) : console.log('Success!')
             );
 
