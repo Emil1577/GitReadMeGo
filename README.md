@@ -20,9 +20,9 @@ First you need to clone my repository. Go to https://github.com/Emil1577/GitRead
 4. [Test Instruction](#test-instruction)
 5. [My Contact Information](#my-contact-information)
 
-## Webpage Screenshots:!
+## Webpage Screenshots:
 
-[Screen Shot 2023-01-23 at 11 16 17 PM](https://user-images.githubusercontent.com/119825000/214232816-4db7e196-7d66-4aeb-a7c3-b795861ea511.png)
+![Screen Shot 2023-01-23 at 11 18 46 PM](https://user-images.githubusercontent.com/119825000/214233156-a40beaca-44ff-4441-9bea-f5016d87e9b4.png)
 ![Screen Shot 2023-01-23 at 10 28 34 PM](https://user-images.githubusercontent.com/119825000/214226276-8fa4e9a0-45e4-484c-8726-1ebb8fa5e2a7.png)
 ![Screen Shot 2023-01-23 at 10 29 44 PM](https://user-images.githubusercontent.com/119825000/214226287-8ebdae14-e068-453a-b409-ae979d34cb94.png)
 
