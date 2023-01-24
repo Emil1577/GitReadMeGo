@@ -1,4 +1,4 @@
-#     ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+#     
 
 ## Decription
 ### 
@@ -35,9 +35,7 @@
 * [My Email](mailto:)
 
 
-## License
 
-## https://opensource.org/licenses/MIT
 
             
 ### Special thanks to all my Instructor, tutors and my colleagues

@@ -102,7 +102,7 @@ inquirer
 * [My Github](https://github.com/${gitHub})
 * [My Email](mailto:${email})
 
-
+${licenseTab}
 ${urlLink}
 
             

@@ -12,14 +12,14 @@ function renderLicenseBadge(license) {
             urlLinkBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
         }
         else if (license.includes('Mozilla')) {
-    
+
             urlLinkBadge = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
-    
+
         } else if (license.includes('IBM')) {
-    
+
             urlLinkBadge = `![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)`
-    
-        } else { urlLinkBadge = ""}
+
+        } else { urlLinkBadge = "" }
 
     }
 }
@@ -30,28 +30,32 @@ function renderLicenseLink(license) {
 
     if (license.includes('MIT')) {
 
-        urlLink = `## License
-
-## https://opensource.org/licenses/MIT`
+        urlLink = `## https://opensource.org/licenses/MIT`
     }
     else if (license.includes('Mozilla')) {
 
-        urlLink = `## License.
-
-## https://opensource.org/licenses/MPL-2.0`
+        urlLink = `## https://opensource.org/licenses/MPL-2.0`
 
     } else if (license.includes('IBM')) {
 
-        urlLink = `## License.
+        urlLink = `## https://opensource.org/licenses/IPL-1.0`
 
-## https://opensource.org/licenses/IPL-1.0`
-
-    } else {  urlLink = ""}
+    } else { urlLink = "" }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+
+    if (license==='none') {
+
+        licenseTab = ``
+
+    } else {
+
+        licenseTab = `## License`;
+    }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(license) {
