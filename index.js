@@ -79,7 +79,7 @@ inquirer
 3. [Guidelines](#contributing)
 4. [Test](#tests)
 5. [How to Use](#how-to-use)
-6. [Contact Information](#my-contact-information)
+6. [Questions](#questions)
 
 ## Installation
 ### ${installation}
@@ -93,14 +93,11 @@ inquirer
 
 ## Tests
 ### ${test}
-
-
-            
-            
+     
 ## How to use:
         
     
-## My Contact Information:
+## Questions:
             
 * [My Github](https://github.com/${gitHub})
 * [My Email](mailto:${email})
