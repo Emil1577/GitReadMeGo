@@ -26,7 +26,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please provide contribution guidelins',
+            message: 'Please provide contribution guidelines',
             name: 'guidelines'
         },
         {
@@ -57,50 +57,51 @@ inquirer
 
         const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
 
-        myReadMe(title, describe, installation, usage, guidelines, test, license, gitHub, email);
+        myReadMe(response);
         function myReadMe() {
 
             var userReadMe = `# ${title}
 
-            ## Decription
-            ### ${describe}
+## Decription
+### ${describe}
+###
+###
 
-            ## Table Of Contents
+## Table Of Contents            
+[Webpage Screenshot](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#webpage-screenshots)
+[Usage:](## Usage)
+[My Contact Information](## my-contact-information)
             
-            1: [Webpage Screenshot](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#webpage-screenshots)
-            2: [How to use:](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#how-to-use)
-            3: [My Contact Information](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#my-contact-information)
+[https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
+
+## Installation
+### ${installation}
             
-            [https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
-
-            ## Installation
-            ###${installation}
-            
-            ## Usage
-            ### ${usage}
+## Usage
+### ${usage}
 
 
-            ## Guidelines
-            ### ${guidelines}
+## Guidelines
+### ${guidelines}
 
-            ## Test
-            ### ${test}
+## Test
+### ${test}
 
 
             
             
-            ## How to use:
+## How to use:
         
     
-            ## My Contact Information:
+## My Contact Information:
             
-            * [My LinkedIn](https://www.linkedin.com/in/emil-ronquillo-76832a32/)
-            * [My Github](https://github.com/${gitHub})
-            * [My Email](mailto:${email})
+* [My LinkedIn](https://www.linkedin.com/in/emil-ronquillo-76832a32/)
+* [My Github](https://github.com/${gitHub})
+* [My Email](mailto:${email})
             
-            ## Thank you for stopping by. 
+## Thank you for stopping by. 
             
-            Special thanks to all my Instructor, tutors and my colleagues`
+Special thanks to all my Instructor, tutors and my colleagues`
 
 
 
