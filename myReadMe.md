@@ -41,6 +41,9 @@
 * [My Github](https://github.com/)
 * [My Email](mailto:)
             
-## Thank you for stopping by. 
+## License.
+
+## [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+
             
 Special thanks to all my Instructor, tutors and my colleagues

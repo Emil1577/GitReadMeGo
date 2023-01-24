@@ -2,6 +2,7 @@ const fs = require('fs')
 const inquirer = require('inquirer')
 const { title } = require('process')
 
+
 inquirer
     .prompt([
         {
@@ -35,10 +36,10 @@ inquirer
             name: 'test'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'Please choose a license',
             name: 'license',
-            choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
+            choices: ['MIT', 'Mozilla', 'IBM'],
         },
         {
             type: 'input',
@@ -55,7 +56,16 @@ inquirer
     .then((response) => {
         console.log(response)
 
-        if (response.license.includes('HTML')){renderLicenseBadge()}
+        const licenses = require('./utils/generateMarkdown')
+
+
+       // if (response.license.includes('HTML')){}
+
+            console.log(licenses.generateMarkdown(response.license));
+         
+            console.log(urlLink)
+           // console.log(HTML)
+        
 
         const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
 
@@ -105,7 +115,10 @@ inquirer
 * [My Github](https://github.com/${gitHub})
 * [My Email](mailto:${email})
             
-## Thank you for stopping by. 
+## License.
+
+## ${urlLink}
+
             
 Special thanks to all my Instructor, tutors and my colleagues`
 
