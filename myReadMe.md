@@ -1,7 +1,7 @@
-# 
+# Weather-Weather
 
 ## Decription
-### 
+### it tells you the weather
 ###
 ###
 
@@ -13,14 +13,12 @@
 5. [How to Use](#how-to-use)
 6. [Usage](#usage)
 7. [Contact Information](#my-contact-information)
-            
-[https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
 
 ## Installation
-### 
+### * You’ll need the following tools and technologies to accomplish this:
             
 ## Usage
-### 
+###   * String template literals for generating a string version of the HTML document before it is written to the file systemnot sure
 
 
 ## Guidelines
@@ -38,8 +36,8 @@
 ## My Contact Information:
             
 * [My LinkedIn](https://www.linkedin.com/in/emil-ronquillo-76832a32/)
-* [My Github](https://github.com/)
-* [My Email](mailto:)
+* [My Github](https://github.com/emil1577)
+* [My Email](mailto:emil@emil.com)
             
 ## License.
 

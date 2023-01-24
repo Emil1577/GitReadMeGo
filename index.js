@@ -22,7 +22,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please provide usage information',
+            message: 'Please provide how to use your project',
             name: 'usage'
         },
         {
@@ -57,16 +57,13 @@ inquirer
         console.log(response)
 
         const licenses = require('./utils/generateMarkdown')
-
-
        // if (response.license.includes('HTML')){}
 
-            console.log(licenses.generateMarkdown(response.license));
+        console.log(licenses.generateMarkdown(response.license));
          
-            console.log(urlLink)
-           // console.log(HTML)
+        console.log(urlLink)
+        // console.log(HTML)
         
-
         const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
 
         myReadMe(response);
@@ -85,10 +82,7 @@ inquirer
 3. [Guidelines](#guidelines)
 4. [Test](#test)
 5. [How to Use](#how-to-use)
-6. [Usage](#usage)
-7. [Contact Information](#my-contact-information)
-            
-[https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
+6. [Contact Information](#my-contact-information)
 
 ## Installation
 ### ${installation}
@@ -111,7 +105,6 @@ inquirer
     
 ## My Contact Information:
             
-* [My LinkedIn](https://www.linkedin.com/in/emil-ronquillo-76832a32/)
 * [My Github](https://github.com/${gitHub})
 * [My Email](mailto:${email})
             
