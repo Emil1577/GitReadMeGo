@@ -22,7 +22,7 @@ First you need to clone my repository. Go to https://github.com/Emil1577/GitRead
 
 ## Webpage Screenshots:
 
-![Screen Shot 2023-01-23 at 10 28 08 PM](https://user-images.githubusercontent.com/119825000/214226264-df016e5b-7f80-4e2a-ba92-e8ac07bfc750.png)
+![Screen Shot 2023-01-23 at 11 18 46 PM](https://user-images.githubusercontent.com/119825000/214233156-a40beaca-44ff-4441-9bea-f5016d87e9b4.png)
 ![Screen Shot 2023-01-23 at 10 28 34 PM](https://user-images.githubusercontent.com/119825000/214226276-8fa4e9a0-45e4-484c-8726-1ebb8fa5e2a7.png)
 ![Screen Shot 2023-01-23 at 10 29 44 PM](https://user-images.githubusercontent.com/119825000/214226287-8ebdae14-e068-453a-b409-ae979d34cb94.png)
 
@@ -143,6 +143,8 @@ const inquirer = require('inquirer')
 ## How to use:
 
 After completing the installation instruction, on the same terminal just type in "node index.js" then enter. The terminal will then ask you multiple questions.  After completing each questions, it will then create a new file called "userReadMe.md".  This file is generated based on the answers provided.
+
+Here's a short video on how to use. https://drive.google.com/file/d/14vYBx3EbTVbQUL8TV-Yj-ptR9qHmb5Jk/view
 
 ## Test Instruction:
 
