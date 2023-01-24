@@ -1,7 +1,7 @@
-#     ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# emil    
 
 ## Decription
-### 
+### ronquillo
 ###
 ###
 
@@ -14,10 +14,10 @@
 6. [Questions](#questions)
 
 ## Installation
-### 
+### i dont know
             
 ## Usage
-### 
+### jbkafba f
 
 
 ## Contributing
@@ -31,13 +31,11 @@
     
 ## Questions:
             
-* [My Github](https://github.com/)
-* [My Email](mailto:)
+* [My Github](https://github.com/emil1577)
+* [My Email](mailto:emil@emilronquillo.com)
 
 
-## License
 
-## https://opensource.org/licenses/MIT
 
             
 ### Special thanks to all my Instructor, tutors and my colleagues
