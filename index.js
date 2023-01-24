@@ -55,6 +55,8 @@ inquirer
     .then((response) => {
         console.log(response)
 
+        if (response.license.includes('HTML')){renderLicenseBadge()}
+
         const { title, describe, installation, usage, guidelines, test, license, gitHub, email } = response;
 
         myReadMe(response);
@@ -68,9 +70,13 @@ inquirer
 ###
 
 ## Table Of Contents            
-[Webpage Screenshot](https://github.com/Emil1577/Weather-Weather/blob/main/README.md#webpage-screenshots)
-[Usage:](## Usage)
-[My Contact Information](## my-contact-information)
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Guidelines](#guidelines)
+4. [Test](#test)
+5. [How to Use](#how-to-use)
+6. [Usage](#usage)
+7. [Contact Information](#my-contact-information)
             
 [https://emil1577.github.io/Weather-Weather](https://emil1577.github.io/Weather-Weather/)
 
