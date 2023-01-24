@@ -94,8 +94,6 @@ inquirer
 ## Tests
 ### ${test}
      
-## How to use:
-        
 ## Questions:
             
 * [My Github](https://github.com/${gitHub})
