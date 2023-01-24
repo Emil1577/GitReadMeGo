@@ -78,8 +78,7 @@ inquirer
 2. [Usage](#usage)
 3. [Guidelines](#contributing)
 4. [Test](#tests)
-5. [How to Use](#how-to-use)
-6. [Questions](#questions)
+5. [Questions](#questions)
 
 ## Installation
 ### ${installation}
