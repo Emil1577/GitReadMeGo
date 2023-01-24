@@ -55,9 +55,9 @@ inquirer
     .then((response) => {
         console.log(response)
 
-        const licenses = require('./utils/generateMarkdown') // grabbing datas from another js file.
+        const licenses = require('./utils/generateMarkdown') // links the generateMarkdown.js so we can exchange data
 
-        licenses.generateMarkdown(response.license);
+        licenses.generateMarkdown(response.license); // triggers generateMarkDown to trigger multiple functions
 
        // console.log(urlLink)
 
@@ -96,7 +96,6 @@ inquirer
      
 ## How to use:
         
-    
 ## Questions:
             
 * [My Github](https://github.com/${gitHub})
